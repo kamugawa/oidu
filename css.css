@@ -1,0 +1,115 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Lora', serif; /* Fonte elegante */
+    background-color: #000000;  /* Fundo rosa suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o conteúdo cubra a tela em qualquer resolução */
+}
+
+main {
+    background-color: #ffffff; /* Fundo branco para o conteúdo */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin: 20px; /* Adiciona espaço nas laterais */
+    text-align: center;
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+h1 {
+    color: #e74c3c; /* Vermelho amoroso para os títulos */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #2c3e50; /* Texto escuro suave */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+p::first-letter {
+    font-size: 1.5em; /* Primeira letra maior para um efeito especial */
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+h1:last-of-type {
+    margin-top: 40px;
+    font-size: 2.5em;
+}
+
+/* Efeito de transição suave no hover */
+main:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Adaptação adicional para resoluções muito pequenas */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+.img1{
+height: 300px;
+border-radius: 30px;
+border: solid rgb(38, 38, 38) 1px;
+}
+
+
+.audio-player {
+  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 500px;
+  margin-left: -400px;
+}
+
+audio {
+ 
+    width: 300px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #671604; /* Cor personalizada para o controle */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider {
+    filter: brightness(1.5); /* Melhora a visibilidade dos controles */
+}
+
+audio::-webkit-media-controls-timeline {
+    border-radius: 30px;
+    background-color: #3b3b3b; /* Cor personalizada para a linha do tempo */
+}
